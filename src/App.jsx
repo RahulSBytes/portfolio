@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from "./components/Header"
+import Projects from "./components/Projects"
+import TechnicalSkills from "./components/TechnicalSkills"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="w-[80%] m-auto max-w-[1100px] text-center">
+      <Header/>
+      <Projects/>
+     <TechnicalSkills/> 
+    </div>
   )
 }
 
 export default App
+
+
+
+
+
+
+// initialized react vite project
+// added lisence
+// configured tailwind css
+// setup stuff like title, favicon, font-family, google icon, tailwind-scrollbar
+// now start with header, footer one-by-one.

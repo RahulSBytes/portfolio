@@ -1,9 +1,19 @@
+import tailwindScrollbar from "tailwind-scrollbar";
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: { 
+        sans: ["inter", "sans-serif"],
+        jetbrains:["JetBrains Mono", "monospace"]
+      },
+      colors:{
+        primary : '#fafafa',
+        primaryblack:'#262626'
+      }
+    },
   },
-  plugins: [],
-}
-
+  plugins: [tailwindScrollbar], // registering the plugin
+};
