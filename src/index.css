@@ -25,3 +25,9 @@ body{
     box-shadow: 0 0 1px 0 #a1a1a1;
     
 }
+
+
+.image-shadow{
+    box-shadow: 0 0 5px -1px #f2f2f2;
+
+}

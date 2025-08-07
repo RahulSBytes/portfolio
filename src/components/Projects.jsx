@@ -4,7 +4,7 @@ import { RiGithubLine, RiPlayCircleLine } from '@remixicon/react'
 import Heading from './Heading'
 
 
-function Projects() {
+export default function Projects() {
 
     const projects = [
         {
@@ -21,7 +21,7 @@ function Projects() {
     ]
 
     return (
-        <section className='border border-red-600 py-12'>
+        <section className=' py-12'>
             <Heading>Projects</Heading>
             <div className="flex gap-12 flex-row flex-wrap">
                 <div className='project-cards w-80 m-auto p-3 pt-4'>
@@ -49,5 +49,3 @@ function Projects() {
         </section>
     )
 }
-
-export default Projects

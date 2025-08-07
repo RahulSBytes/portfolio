@@ -2,9 +2,9 @@ import { RiGithubLine, RiLinkedinLine, RiMailLine, RiFileDownloadLine, RiContact
 import Button from "./Button";
 
 
-function HeroSection() {
+export default function HeroSection() {
     return (
-        <section className='flex flex-col flex-1 w-full gap-6 justify-center items-center border border-green-600'>
+        <section className='flex flex-col flex-1 w-full gap-6 justify-center items-center  '>
           <div className='font-sans font-bold text-3xl'>Hi, I'm <img className='inline h-12 rounded-xl' src="images/image2.jpeg" alt="" /> Rahul Sharma</div>
             <p className='text-lg font-medium font-sans'>MERN Stack Developer
                 Passionate about building impactful web experiences
@@ -27,5 +27,3 @@ function HeroSection() {
         </section>
     )
 }
-
-export default HeroSection

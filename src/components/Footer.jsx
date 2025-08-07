@@ -1,7 +1,5 @@
-function Footer() {
+export default function Footer() {
   return (
-    <div className="border">Footer</div>
+    <div className="">Footer</div>
   )
 }
-
-export default Footer

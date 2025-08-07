@@ -25,7 +25,7 @@ import {
 function TechPills({ data, title, HeadingIcon }) {
     return (
         <div className="">
-            <div className="flex gap-2 mb-4">
+            <div className="flex gap-2 mb-5">
                 <span><HeadingIcon color='#008080' /></span>
                 <h3 className='text-primary text-lg'>{title}</h3>
             </div>
@@ -45,7 +45,7 @@ function TechPills({ data, title, HeadingIcon }) {
 
 
 
-function TechnicalSkills() {
+export default function TechnicalSkills() {
 
     const skills = {
         frontend: [
@@ -169,9 +169,9 @@ function TechnicalSkills() {
 
 
     return (
-        <section className="border border-yellow-500 py-12">
+        <section className=" py-12">
             <Heading>Technical Skills</Heading>
-            <div className=" flex flex-col gap-10">
+            <div className=" flex flex-col gap-16">
                 <TechPills title={'Frontend Development'} data={skills.frontend} HeadingIcon={RiCodeLine} />
                 <TechPills title={'Backend Development'} data={skills.backend} HeadingIcon={RiServerLine} />
                 <TechPills title={'Database'} data={skills.database} HeadingIcon={RiDatabase2Line} />
@@ -183,5 +183,3 @@ function TechnicalSkills() {
         </section>
     )
 }
-
-export default TechnicalSkills

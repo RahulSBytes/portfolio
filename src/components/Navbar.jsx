@@ -1,7 +1,7 @@
 import { RiMenu3Line, RiMoonFill } from "@remixicon/react";
 import { useState } from "react";
 
-function Navbar() {
+export default function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -36,7 +36,7 @@ function Navbar() {
                 <li className="list-none"><RiMoonFill size={24} color="#e5e5e5" /></li>
                 <ul className="md:hidden list-none cursor-pointer relative">
                     <RiMenu3Line onClick={() => setIsOpen(!isOpen)} />
-                    <ul className={`absolute border p-4 right-2`}>
+                    <ul className={`absolute p-4 right-2`}>
                         {
                             navs.map((item) => (
                                 <li key={Math.random()}><a className="font-jetbrains text-sm font-light" href="item.href">{item.label}</a></li>
@@ -48,5 +48,3 @@ function Navbar() {
         </nav>
     )
 }
-
-export default Navbar
