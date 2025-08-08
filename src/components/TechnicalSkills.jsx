@@ -30,7 +30,7 @@ function TechPills({ data, title, HeadingIcon }) {
                 <h3 className='text-primary text-lg'>{title}</h3>
             </div>
 
-            <ul className="flex flex-wrap gap-3 ">
+            <ul className="flex flex-wrap gap-3  ml-8">
                 {data.map((item, index) => (
                     <li key={index} className=" tech-pills px-2 py-1 flex items-center gap-2 rounded-2xl bg-[#2D2D2D]">
                         <item.icon size={18} color={item.color} />

@@ -4,17 +4,19 @@ import '../index.css'
 
 export default function About() {
     return (
-        <section className=' '>
+        <section className=''>
             <Heading>About</Heading>
             <div className="flex flex-col-reverse md:flex-row">
-                <p className="p-3 my-4 text-left text-sm/5 md:w-3/5">
+                <div className="p-3 my-4 text-left text-sm/6 md:w-3/5">
                     Hi, I'm Rahul — a full-stack developer who builds clean, scalable web applications that solve real problems. I specialize in the MERN stack and have a knack for turning complex ideas into intuitive user experiences. From crafting responsive React interfaces to architecting robust Node.js backends, I enjoy tackling challenges across the entire development spectrum.
                     <div className='mt-1'> Currently pursuing my Computer Science Engineering degree, I've built several projects involving modern UI with React and Tailwind CSS, RESTful APIs with Express and MongoDB, and seamless deployments on platforms like Vercel and Render.
                         What drives me? The satisfaction of seeing code come to life and knowing it makes someone's day a little easier.</div>
                     <div className='mt-2'>
-                        <b> Currently exploring:</b> Next.js, TypeScript, and system design Open to: Internships, freelance projects, and collaboration opportunities
+                        <b> Currently exploring:</b> Next.js, TypeScript, and system design 
+                        <br />
+                        <b> Open to:</b> Internships, freelance projects, and collaboration opportunities
                     </div>
-                </p>
+                </div>
                 <div className="flex-1 flex justify-center items-center ">
                     <img className='image-shadow h-52 object-cover w-52 md:w-48 rounded-full md:rounded-none' src="/images/image1.jpeg" alt="" />
                 </div>

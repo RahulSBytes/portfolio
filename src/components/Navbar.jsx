@@ -36,10 +36,10 @@ export default function Navbar() {
                 <li className="list-none"><RiMoonFill size={24} color="#e5e5e5" /></li>
                 <ul className="md:hidden list-none cursor-pointer relative">
                     <RiMenu3Line onClick={() => setIsOpen(!isOpen)} />
-                    <ul className={`absolute p-4 right-2`}>
+                    <ul className={`absolute p-4 w-max gap-2  top-8 right-2 ${isOpen? 'flex': 'hidden'} flex flex-col bg-[#292929]`}>
                         {
                             navs.map((item) => (
-                                <li key={Math.random()}><a className="font-jetbrains text-sm font-light" href="item.href">{item.label}</a></li>
+                                <li className="bg-[#303030] py-1 px-6" key={Math.random()}><a className="font-jetbrains text-sm font-light" href="item.href">{item.label}</a></li>
                             ))
                         }
                     </ul>

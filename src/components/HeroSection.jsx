@@ -1,4 +1,4 @@
-import { RiGithubLine, RiLinkedinLine, RiMailLine, RiFileDownloadLine, RiContactsLine  } from "@remixicon/react";
+import { RiGithubLine, RiLinkedinLine, RiMailSendLine, RiFileDownloadLine, RiContactsLine } from "@remixicon/react";
 import Button from "./Button";
 
 
@@ -14,7 +14,7 @@ export default function HeroSection() {
                 <div className="flex gap-4 mt-4 mb-6">
                     <RiGithubLine/>
                     <RiLinkedinLine/>
-                    <RiMailLine/>
+                    <RiMailSendLine/>
                 </div>
                 <div className="flex gap-6">
                     <Button variant="primary">
