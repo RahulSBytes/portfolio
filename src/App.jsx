@@ -9,7 +9,7 @@ import TechnicalSkills from "./components/TechnicalSkills"
 
 export default function App() {
   return (
-    <div className="w-[80%] m-auto max-w-[1100px] text-center">
+    <div className=" app-container w-[80%] m-auto max-w-[1100px] text-center">
       <Header/>
       <Projects/>
      <TechnicalSkills/> 

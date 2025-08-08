@@ -23,11 +23,10 @@ export default function Navbar() {
     return (
         <nav className="font-jetbrains flex justify-between items-center py-8">
             <div className="logo text-xl font-jetBrains font-bold text-primary">rahul.dev</div>
-
             <ul className="gap-8  hidden md:flex">
                 {
-                    navs.map((item) => (
-                        <li key={Math.random()}><a className="font-jetbrains text-sm font-light" href="item.href">{item.label}</a></li>
+                    navs.map((item,idx) => (
+                        <li key={idx}><a className="font-jetbrains text-sm font-light hover:text-[#008080]" href={item.href}>{item.label}</a></li>
                     ))
                 }
 
@@ -36,10 +35,10 @@ export default function Navbar() {
                 <li className="list-none"><RiMoonFill size={24} color="#e5e5e5" /></li>
                 <ul className="md:hidden list-none cursor-pointer relative">
                     <RiMenu3Line onClick={() => setIsOpen(!isOpen)} />
-                    <ul className={`absolute p-4 w-max gap-2  top-8 right-2 ${isOpen? 'flex': 'hidden'} flex flex-col bg-[#292929]`}>
+                    <ul className={`absolute p-4 w-max gap-2  top-8 right-2 ${isOpen ? 'flex' : 'hidden'} flex flex-col bg-[#292929]`}>
                         {
-                            navs.map((item) => (
-                                <li className="bg-[#303030] py-1 px-6" key={Math.random()}><a className="font-jetbrains text-sm font-light" href="item.href">{item.label}</a></li>
+                            navs.map((item,idx) => (
+                                <li  className="bg-[#303030] py-1 px-6" key={idx}><a onClick={()=>setIsOpen(!isOpen)} className="font-jetbrains text-sm font-light hover:text-[#008080]" href={item.href}>{item.label}</a></li>
                             ))
                         }
                     </ul>

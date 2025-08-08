@@ -7,7 +7,7 @@ export default function Button({
   type = 'button',
   ...rest 
 }) {
-  const baseStyles = "flex items-center text-xs gap-1 px-2 py-1 font-medium rounded-2xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 whitespace-nowrap";
+  const baseStyles = "flex items-center text-xs gap-1 px-3 py-1 font-medium rounded-2xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 whitespace-nowrap";
   
   const variants = {
     primary: 'bg-primary text-primaryblack hover:bg-primary/90 focus:ring-primary',

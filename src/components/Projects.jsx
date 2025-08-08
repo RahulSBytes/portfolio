@@ -21,11 +21,11 @@ export default function Projects() {
     ]
 
     return (
-        <section className=' py-12'>
+        <section className='' id='projects'>
             <Heading>Projects</Heading>
             <div className="flex gap-12 flex-row flex-wrap">
                 <div className='project-cards w-80 m-auto p-3 pt-4'>
-                    <img className='rounded-2xl w-full h-48 object-cover' src="/images/image1.jpeg" alt="" />
+                    <img className='rounded-2xl w-full h-48 object-cover' src="/images/homitly.png" alt="" />
                     <div className="text-left my-3">
                         <h3 className='text-lg font-bold line-clamp-1 mb-2 text-primary'>Homitly - a hotel booking platform</h3>
                         <p className='text-zinc-200 line-clamp-3 mx-2 text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos repellendus odit necessitatibus nam adipisci consequatur quisquam, nulla culpa commodi ipsa!</p>

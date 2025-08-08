@@ -4,7 +4,7 @@ import '../index.css'
 
 export default function About() {
     return (
-        <section className=''>
+        <section id='about'>
             <Heading>About</Heading>
             <div className="flex flex-col-reverse md:flex-row">
                 <div className="p-3 my-4 text-left text-sm/6 md:w-3/5">

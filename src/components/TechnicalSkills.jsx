@@ -169,7 +169,7 @@ export default function TechnicalSkills() {
 
 
     return (
-        <section className=" py-12">
+        <section className="" id='tack-stacks'>
             <Heading>Technical Skills</Heading>
             <div className=" flex flex-col gap-16">
                 <TechPills title={'Frontend Development'} data={skills.frontend} HeadingIcon={RiCodeLine} />

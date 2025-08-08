@@ -23,7 +23,7 @@ function Block() {
         },
     ]
 
-    return data.map((el, index) => <div key={index}>
+    return data.map((el, index) => <div className='min-w-96 w-[48%] pl-4' key={index}>
         <h4 className='font-bold'>{el.heading}</h4>
         <p className='text-sm my-1'>{el.source}</p>
         <a className='flex gap-2 text-[#008080] text-sm' href={el.link}>View Certificate <RiExternalLinkLine size={20} /> </a>
@@ -37,7 +37,7 @@ function Certifications() {
     return (
         <section>
             <Heading>Certifications</Heading>
-            <div className="text-left flex flex-col gap-6">
+            <div className="text-left flex-wrap flex flex-row gap-y-10">
                 <Block />
             </div>
         </section>
