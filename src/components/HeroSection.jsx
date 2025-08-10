@@ -22,7 +22,7 @@ export default function HeroSection() {
 
     return (
         <section className='flex flex-col flex-1 w-full gap-4 justify-center items-center  '>
-            <div className='font-sans font-bold text-3xl'>Hi, I'm <img className='inline h-12 rounded-xl' src="images/image2.jpeg" alt="" /> Rahul Sharma. <br />
+            <div className='font-sans font-bold text-3xl'>Hi, I'm <img className='inline h-12 rounded-xl' src="../../public/images/image2.jpeg" alt="" /> Rahul Sharma. <br />
            <div className="mt-3 mb-2">A Passionate MERN Stack Developer</div> 
                 </div>
             {/* <p className='text-lg font-medium font-sans my-3'>
