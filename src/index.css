@@ -42,3 +42,9 @@ section{
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
+
+.project-card-image{
+    box-shadow: 0 0 2px -1px #f2f2f2;
+
+}
