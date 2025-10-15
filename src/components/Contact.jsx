@@ -68,7 +68,7 @@ function Contact() {
 
 
     return (
-        <section className='px-5 '>
+        <section className='px-5 ' id='contact'>
             <Heading className={'!mb-4'}>Get in Touch</Heading>
             <p className='italic text-sm text-zinc-200 mb-12'>Feel free to reach out for collaboration, job opportunities, or just to say hi!</p>
 

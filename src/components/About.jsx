@@ -1,6 +1,7 @@
 import React from 'react'
 import Heading from './Heading'
 import '../index.css'
+// import image1 from '../../public/images'
 
 export default function About() {
     return (
@@ -18,7 +19,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="flex-1 flex justify-center items-center ">
-                    <img className='image-shadow h-60 object-cover w-60 md:w-48 rounded-full md:rounded-none' src="../../public/images/image1.jpeg" alt="" />
+                    <img className='image-shadow h-60 object-cover w-60 md:w-48 rounded-full md:rounded-none' src='./images/image1.jpeg' alt="" />
                 </div>
             </div>
         </section>

@@ -8,7 +8,7 @@ export default function Projects() {
 
     const projects = [
         {
-            image: '../../public/images/homitly.png',
+            image: './images/homitly.png',
             title: 'Homitly – Airbnb-Inspired Booking Platform',
             description: 'Full-stack accommodation booking app with user authentication, property listings, image uploads, booking management, and email confirmations.',
             tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'Cloudinary', 'Passport.js'],
@@ -18,7 +18,7 @@ export default function Projects() {
             }
         },
         {
-            image: '../../public/images/portfolio.png',
+            image: './images/portfolio.png',
             title: 'Personal Portfolio Website',
             description: 'A responsive personal portfolio website to showcase my skills, projects, and contact information. Built with React and styled using Tailwind CSS, featuring email integration via EmailJS.',
             tech: ["React", "Vite", "Tailwind CSS", "EmailJS", "Remix Icons"],

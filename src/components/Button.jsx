@@ -18,7 +18,7 @@ export default function Button({
   const disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : '';
 
   return (
-    <button 
+    <a 
       onClick={onClick}
       disabled={disabled}
       type={type}
@@ -26,6 +26,6 @@ export default function Button({
       {...rest}
     >
       {children}
-    </button>
+    </a>
   );
 }
