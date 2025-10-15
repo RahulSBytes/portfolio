@@ -40,7 +40,7 @@ export default function HeroSection() {
                 }
             </div>
             <div className="flex gap-6">
-                <Button variant="primary">
+                <Button variant="primary" >
                     Resume <RiFileDownloadLine size={20} />
                 </Button>
                 <Button href={'#contact'}>
