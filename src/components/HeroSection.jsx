@@ -40,7 +40,8 @@ export default function HeroSection() {
                 }
             </div>
             <div className="flex gap-6">
-                <Button variant="primary">
+                
+               <Button variant="primary" href={'../../public/rahulSharma-resume.pdf'} download>
                     Resume <RiFileDownloadLine size={20} />
                 </Button>
                 <Button >
