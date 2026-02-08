@@ -7,27 +7,47 @@ import Heading from './Heading'
 export default function Projects() {
 
     const projects = [
-        {
-            image: './images/homitly.png',
-            title: 'Homitly – Airbnb-Inspired Booking Platform',
-            description: 'Full-stack accommodation booking app with user authentication, property listings, image uploads, booking management, and email confirmations.',
-            tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'Cloudinary', 'Passport.js'],
-            links: {
-                github: 'https://github.com/RahulSBytes/Homitly',
-                live: 'https://homitly.onrender.com'
-            }
-        },
-        {
-            image: './images/portfolio.png',
-            title: 'Personal Portfolio Website',
-            description: 'A responsive personal portfolio website to showcase my skills, projects, and contact information. Built with React and styled using Tailwind CSS, featuring email integration via EmailJS.',
-            tech: ["React", "Vite", "Tailwind CSS", "EmailJS", "Remix Icons"],
-            links: {
-                github: 'https://github.com/RahulSBytes/portfolio',
-                live: ''
-            }
-        },
-    ]
+    {
+        image: './images/axon.png',
+        title: 'Axon – AI-Powered Chat Assistant',
+        description: 'Intelligent conversational AI assistant with real-time web search, multi-provider authentication, and dynamic tool calling for accurate, up-to-date responses.',
+        tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Groq API', 'Passport.js', 'Tailwind CSS'],
+        links: {
+            github: 'https://github.com/RahulSBytes/Axon',
+            live: 'http://axon-nine-mu.vercel.app'
+        }
+    },
+    {
+        image: './images/syncchat.png',
+        title: 'SyncChat – Real-Time Messaging Platform',
+        description: 'Full-featured messaging platform supporting 400+ concurrent users with <50ms latency, secure OAuth 2.0 authentication, role-based access, and multi-format file sharing.',
+        tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'JWT', 'Zustand', 'Cloudinary'],
+        links: {
+            github: 'https://github.com/RahulSBytes/synqChat-frontend',
+            live: 'https://synqchatapp.vercel.app'
+        }
+    },
+    {
+        image: './images/homitly.png',
+        title: 'Homitly – Airbnb-Inspired Booking Platform',
+        description: 'Full-stack accommodation booking app with user authentication, property listings, image uploads, booking management, and email confirmations.',
+        tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'Cloudinary', 'Passport.js'],
+        links: {
+            github: 'https://github.com/RahulSBytes/Homitly',
+            live: 'https://homitly.onrender.com'
+        }
+    },
+    {
+        image: './images/portfolio.png',
+        title: 'Personal Portfolio Website',
+        description: 'A responsive personal portfolio website to showcase my skills, projects, and contact information. Built with React and styled using Tailwind CSS, featuring email integration via EmailJS.',
+        tech: ['React', 'Vite', 'Tailwind CSS', 'EmailJS', 'Remix Icons'],
+        links: {
+            github: 'https://github.com/RahulSBytes/portfolio',
+            live: 'http://localhost:5173/portfolio/'
+        }
+    },
+]
 
     return (
         <section className='' id='projects'>
@@ -46,8 +66,8 @@ export default function Projects() {
                                 }
                             </div>
                             <div className="flex mt-4 gap-3 flex-wrap">
-                               <a href={el.links.github}><Button variant='primary'><RiGithubLine size={20} /> View Code</Button></a> 
-                             {el.links.live  && <a href={el.links.Live}><Button ><RiPlayCircleLine size={20} />Explore Live</Button></a>}
+                               <a className='' href={el.links.github}><Button variant='primary'><RiGithubLine size={20} /> View Code</Button></a> 
+                             {el.links.live  && <a href={el.links.live}><Button ><RiPlayCircleLine size={20} />Explore Live</Button></a>}
                             </div>
                         </div>
                     </div>
