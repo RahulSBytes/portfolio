@@ -9,7 +9,7 @@ export default function HeroSection() {
     const data = [
         {
             icon: RiMailSendLine,
-            text: "rraj25198@gmail.com"
+            link: `mailto:${import.meta.env.VITE_MY_EMAIL}`
         },
         {
             icon: RiLinkedinBoxFill,
@@ -28,11 +28,10 @@ export default function HeroSection() {
             </div>
             {/* <p className='text-lg font-medium font-sans my-3'>
             </p> */}
-            <p className="text-sm max-w-[800px] text-[#d4d4d4]">I'm a Computer Science student and self-taught developer focused on crafting full-stack web applications.
-                Currently exploring the MERN stack, deploying real-world projects, and always eager to learn and grow.</p>
+            <p className="text-sm max-w-[800px] text-[#d4d4d4]">Full-stack developer building scalable web apps and exploring Generative AI. CSE undergrad who ships real products, not just tutorials.</p>
             <div className="flex gap-4 mt-4 mb-6">
                 {
-                    data.map((el, index) => <a key={index} className="flex rounded-md p-[3px] hover:bg-[#353535]" href={el.link ? el.link : `mailto:${import.meta.env.VITE_MY_EMAIL}`}>
+                    data.map((el, index) => <a key={index} className="flex rounded-md p-[3px] hover:bg-[#353535]" href={el.link}>
                         <el.icon size={24} color="#fafafa" />
                     </a>)
                 }

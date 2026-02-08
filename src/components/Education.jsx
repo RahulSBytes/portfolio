@@ -10,7 +10,7 @@ export default function Education() {
                 <p className="flex gap-2"><RiGraduationCapLine color="#008080" />Deen Dayal Upadhyaya Gorakhpur University</p>
                 <p className="flex gap-1"><RiUserLocationLine color="#008080" />Gorakhpur, Uttar Pradesh | Expected 2026</p>
                 <h3><b> CGPA:</b> 7.9/10</h3>
-                <h3><b>Key Focus:</b>  Full-stack development, algorithms</h3>
+                <h3><b>Key Focus:</b>  Full-stack development | Gen AI</h3>
             </div>
         </section>
     )

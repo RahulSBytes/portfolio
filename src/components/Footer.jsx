@@ -9,7 +9,7 @@ export default function Footer({className}) {
     },
     {
       icon: RiLinkedinFill,
-      link: "https://www.linkedin.com/in/rahul-sharma-427a35273"
+      link: "linkedin.com/in/thedevrahul"
     },
     {
       icon: RiGithubLine,
